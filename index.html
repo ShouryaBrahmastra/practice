@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+      <title>Git workshop</title>
+
+      <!-- JQUERY -->
+      <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+
+      <!-- Bootstrap -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+      integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+      crossorigin="anonymous"></script>
+
+      <!-- FULL PAGE.JS -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.4/jquery.fullpage.css" />
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.4/jquery.fullpage.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.4/vendors/scrolloverflow.min.js"></script>
+
+      <!--- Fonts ---->
+      <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:ital@1&display=swap" rel="stylesheet">
+
+      <!-- CSS -->
+      
+      <style>
+                /* CSS Class */
+        * {
+            box-sizing: border-box;
+            margin:0;
+            padding:0;
+        }
+
+        body{
+            background-color: #a8dadc;
+            margin:20px;
+        }
+
+        h1{
+            padding-top: 2.5rem;
+            padding-bottom: 2rem;
+            margin: 0;
+            font-family: 'Dancing Script', cursive;
+        }
+
+        h2{
+            padding-bottom: 3.5rem;
+            font-weight: bold;
+            font-family: 'Zilla Slab', serif; 
+        }
+
+        p{
+            font-family: 'Zilla Slab', serif;   
+        }
+
+        a{
+            color: black;
+            font-family: 'Zilla Slab', serif;
+            font-size: 1.7rem;
+            content: justify;
+        }
+
+        .footnote {
+            position: relative;
+            bottom: 0%;
+            height: 50px;
+            flex-shrink: 0;
+            width: auto;
+            background-color: #ffffff;
+            margin: 0;
+            min-height: 84px;
+            overflow: hidden;
+            padding: 0;
+            width: auto;
+        }
+        .footnote div {
+            margin: 0 auto;
+            overflow: hidden;
+            padding: 34px 0 0;
+            width: 960px;
+        }
+        .footnote div p {
+            color: #000000;
+            display: block;
+            font-family: Arial;
+            font-size: 12px;
+            font-weight: normal;
+            margin: 0 auto;
+            padding: 0;
+            text-align: center;
+            text-transform: uppercase;
+            width: 940px;
+        }
+
+        
+
+        .btn{
+            border-radius: 5%;
+            background-color: #a8dadc;
+            color: black;
+            font-family: 'Zilla Slab', serif;
+            font-weight: bold;
+            border-color: #00FFFF;
+            /*transition: 0.3s;*/
+            transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+        }
+
+        .btn:hover{
+            background-color: black;
+            border-color: #ff9100;
+        }
+
+        .jumbotron-fluid{
+            padding: 10px;
+        }
+
+        .center h2{
+            text-align: center;
+        }
+
+        .center li{
+            text-align: center;
+        }
+
+        li {
+            list-style: none;
+            font-weight: 500;
+        }
+
+        /* -------- */
+        .header-bg{
+            background-color: #1f1f1d;
+        }
+
+        .jumbotron-fluid{
+            /* background-color: #f76c5e; */
+            
+            text-align: center;
+        }
+
+        .jumbotron-fluid h1{
+            color: white;
+            font-size: 8rem;
+        }
+
+        .jumbotron-fluid p{
+            color: white;   
+        }
+
+        #footer{
+            background-color: blue;
+            text-align: center;
+            color: red;
+            bottom: 0px;
+        }
+
+        .list-grid ol{
+            column-count: 3;
+        }
+
+        @media (max-width: 768px) {
+            .jumbotron-fluid h1 {
+                font-size: 4rem;
+            }
+        }
+
+        
+    @media only screen and (max-width: 918px) {
+        .footnote div {
+            margin: 0 auto;
+            padding: 10% 0;
+            width: 95%;
+        }
+        .footnote div p {
+             width: 100%;
+        }
+    }
+
+        
+         ::-webkit-scrollbar{
+            width: 15px;
+         }
+         ::-webkit-scrollbar-track{
+            border-radius: 5px;
+            box-shadow: inset 0 0 10px rgb(255, 255, 255);
+         }
+         ::-webkit-scrollbar-thumb {
+            border-radius: 10px;
+            background-color: rgb(83, 221, 221);
+         }
+      </style>
+
+   </head>
+
+   <body>
+      <!-- <div id="fullpage"> -->
+      <!-- Intro Header -->
+      <!-- Dont Change This Section -->
+      <div class="section header-bg">
+         <div class="jumbotron-fluid">
+            <h1>GIT & GITHUB Contribution Sheet</h1>
+            <p class="lead">Very simple repo! Great for beginners to make their first pull request! Feel free to sign in xD
+            </p>
+            
+         </div>
+      </div>
+
+      <div class="section center list-grid">
+         <h2></br>Welcome To Open Source</h2>
+         <!-- SIGN IN HERE -->
+         <ol>
+             
+            <!--            In This Format
+                    
+             <li><a href ="https://github.com/ShouryaBrahmastra">Shourya Gupta</a></li> 
+
+                                                                                -->
+            <li><a href="https://github.com/vishalkrsharma">Vishal Kumar Sharma</a></li>
+            
+
+         </ol>
+      </div>
+      </div>
+      <section style="position: 100%;"> 
+        <div class="footnote" >
+            <div>
+                <p>&copy; 2022 BY <a href ="https://github.com/ShouryaBrahmastra">SHOURYABRAHMASTRA<a> | ALL RIGHTS RESERVED</p>
+            </div>
+        </div>
+      </section>
+      
+      <!-- Full Page End -->
+      <!-- Script -->
+      <script>
+         $(document).ready(function () {
+           $('#fullpage').fullpage();
+         });
+      </script>
+   </body>
+</html>
